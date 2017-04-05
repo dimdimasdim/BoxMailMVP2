@@ -37,10 +37,11 @@ public class LoginPresenter {
     }
 
 
-    public void  checkSession(){
+    public boolean  checkSession(){
         if (!session.isLoggedIn()){
             loginView.session(context);
-        }
+            return true;
+        }return false;
     }
 
 }
