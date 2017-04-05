@@ -45,8 +45,6 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
     public void inisialisaiPresenterLogin(){
         SeassionManager seassion = new SeassionManager(getApplicationContext());
         loginPresenter = new LoginPresenter(this,seassion);
-
-//        seassion.check();
     }
 
 
@@ -69,6 +67,4 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
     public void notifMe(String message) {
         Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();
     }
-
-
 }
