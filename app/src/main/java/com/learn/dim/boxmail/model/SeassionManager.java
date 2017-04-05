@@ -41,15 +41,15 @@ public class SeassionManager {
         editor.commit();
     }
 
-    public void check(){
-        if (!this.isLoggedIn()){
-            Intent i = new Intent(mContext, MainActivity.class);
+//     public void check(){
+//         if (!this.isLoggedIn()){
+//             Intent i = new Intent(mContext, MainActivity.class);
 
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            mContext.startActivity(i);
-        }
-    }
+//             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//             i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//             mContext.startActivity(i);
+//         }
+//     }
 
     public HashMap<String, String> getUserDetails(){
         HashMap<String, String> user =new HashMap<String, String>();
